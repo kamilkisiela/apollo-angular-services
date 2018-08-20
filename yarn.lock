@@ -173,12 +173,6 @@
   dependencies:
     tslib "^1.9.0"
 
-"@kamilkisiela/graphql-codegen-apollo-angular-template@^0.10.8-alpha.2":
-  version "0.10.8-alpha.2"
-  resolved "https://registry.yarnpkg.com/@kamilkisiela/graphql-codegen-apollo-angular-template/-/graphql-codegen-apollo-angular-template-0.10.8-alpha.2.tgz#80d74b7317283ca37dd1ed110778e090151e399e"
-  dependencies:
-    graphql-codegen-typescript-template "0.10.7"
-
 "@ngtools/webpack@6.1.4":
   version "6.1.4"
   resolved "https://registry.yarnpkg.com/@ngtools/webpack/-/webpack-6.1.4.tgz#dab670b4f03a88afd07ed15e1b5f27f16c3be3a8"
@@ -2430,9 +2424,9 @@ graphql-anywhere@^4.1.17:
   dependencies:
     apollo-utilities "^1.0.19"
 
-graphql-code-generator@^0.10.7:
-  version "0.10.7"
-  resolved "https://registry.yarnpkg.com/graphql-code-generator/-/graphql-code-generator-0.10.7.tgz#61ea52ab082205dc34e8678b5e4ee1c86ebfe1e3"
+graphql-code-generator@0.11.0-alpha.0:
+  version "0.11.0-alpha.0"
+  resolved "https://registry.yarnpkg.com/graphql-code-generator/-/graphql-code-generator-0.11.0-alpha.0.tgz#6d04234cc04d98a0c37b0743d59f3b36a5b2831a"
   dependencies:
     "@types/babylon" "6.16.3"
     "@types/is-glob" "4.0.0"
@@ -2443,42 +2437,55 @@ graphql-code-generator@^0.10.7:
     commander "2.17.1"
     fb-watchman "2.0.0"
     glob "7.1.2"
-    graphql-codegen-compiler "0.10.7"
-    graphql-codegen-core "0.10.7"
+    graphql-codegen-compiler "0.11.0-alpha.0"
+    graphql-codegen-core "0.11.0-alpha.0"
+    graphql-import "0.6.0"
     is-glob "4.0.0"
     is-valid-path "0.1.1"
     mkdirp "0.5.1"
-    pify "3.0.0"
-    prettier "1.14.0"
-    request "2.87.0"
+    pify "4.0.0"
+    prettier "1.14.2"
+    request "2.88.0"
     valid-url "1.0.9"
 
-graphql-codegen-compiler@0.10.7:
-  version "0.10.7"
-  resolved "https://registry.yarnpkg.com/graphql-codegen-compiler/-/graphql-codegen-compiler-0.10.7.tgz#f34d998dd9e44a192fa06989bcd9dba7712a38ae"
+graphql-codegen-apollo-angular-template@0.11.0-alpha.0:
+  version "0.11.0-alpha.0"
+  resolved "https://registry.yarnpkg.com/graphql-codegen-apollo-angular-template/-/graphql-codegen-apollo-angular-template-0.11.0-alpha.0.tgz#294fa7079d2c10d8cf0621eaa19a4a09e48de465"
+  dependencies:
+    graphql-codegen-typescript-template "0.11.0-alpha.0"
+
+graphql-codegen-compiler@0.11.0-alpha.0:
+  version "0.11.0-alpha.0"
+  resolved "https://registry.yarnpkg.com/graphql-codegen-compiler/-/graphql-codegen-compiler-0.11.0-alpha.0.tgz#b53ce8b53400bba11b150e49f3a74c9eeef51b07"
   dependencies:
     "@types/handlebars" "4.0.39"
     change-case "3.0.2"
     common-tags "1.8.0"
-    graphql-codegen-core "0.10.7"
+    graphql-codegen-core "0.11.0-alpha.0"
     handlebars "4.0.11"
     moment "2.22.2"
 
-graphql-codegen-core@0.10.7:
-  version "0.10.7"
-  resolved "https://registry.yarnpkg.com/graphql-codegen-core/-/graphql-codegen-core-0.10.7.tgz#c9da196661843924ee28ebb5bc2a4976d98c2aa2"
+graphql-codegen-core@0.11.0-alpha.0:
+  version "0.11.0-alpha.0"
+  resolved "https://registry.yarnpkg.com/graphql-codegen-core/-/graphql-codegen-core-0.11.0-alpha.0.tgz#7a552708f751df1d4c0117505b100c79db8371a5"
   dependencies:
     graphql-tag "2.9.2"
     graphql-tools "3.1.1"
     winston "3.0.0"
 
-graphql-codegen-introspection-template@^0.10.7:
-  version "0.10.7"
-  resolved "https://registry.yarnpkg.com/graphql-codegen-introspection-template/-/graphql-codegen-introspection-template-0.10.7.tgz#7531c24c10c47ef65c61d39def27c2febf09bd43"
+graphql-codegen-introspection-template@0.11.0-alpha.0:
+  version "0.11.0-alpha.0"
+  resolved "https://registry.yarnpkg.com/graphql-codegen-introspection-template/-/graphql-codegen-introspection-template-0.11.0-alpha.0.tgz#92cd53ee7173507dbd1234fffb21f8e9832ce8fc"
 
-graphql-codegen-typescript-template@0.10.7:
-  version "0.10.7"
-  resolved "https://registry.yarnpkg.com/graphql-codegen-typescript-template/-/graphql-codegen-typescript-template-0.10.7.tgz#85cd56347ae04eb94af0044f3b5fdd932d849f9c"
+graphql-codegen-typescript-template@0.11.0-alpha.0:
+  version "0.11.0-alpha.0"
+  resolved "https://registry.yarnpkg.com/graphql-codegen-typescript-template/-/graphql-codegen-typescript-template-0.11.0-alpha.0.tgz#ec8ae84ad540119cbe757fc80c6ca7bdb7b57f37"
+
+graphql-import@0.6.0:
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/graphql-import/-/graphql-import-0.6.0.tgz#c00cb8a269ceea263e062922c8c81a2272d1ffcb"
+  dependencies:
+    lodash "^4.17.4"
 
 graphql-tag@2.9.2, graphql-tag@^2.9.2:
   version "2.9.2"
@@ -4240,13 +4247,17 @@ performance-now@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/performance-now/-/performance-now-2.1.0.tgz#6309f4e0e5fa913ec1c69307ae364b4b377c9e7b"
 
-pify@3.0.0, pify@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/pify/-/pify-3.0.0.tgz#e5a4acd2c101fdf3d9a4d07f0dbc4db49dd28176"
+pify@4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/pify/-/pify-4.0.0.tgz#db04c982b632fd0df9090d14aaf1c8413cadb695"
 
 pify@^2.0.0, pify@^2.3.0:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/pify/-/pify-2.3.0.tgz#ed141a6ac043a849ea588498e7dca8b15330e90c"
+
+pify@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/pify/-/pify-3.0.0.tgz#e5a4acd2c101fdf3d9a4d07f0dbc4db49dd28176"
 
 pinkie-promise@^2.0.0:
   version "2.0.1"
@@ -4331,9 +4342,9 @@ preserve@^0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/preserve/-/preserve-0.2.0.tgz#815ed1f6ebc65926f865b310c0713bcb3315ce4b"
 
-prettier@1.14.0:
-  version "1.14.0"
-  resolved "https://registry.yarnpkg.com/prettier/-/prettier-1.14.0.tgz#847c235522035fd988100f1f43cf20a7d24f9372"
+prettier@1.14.2:
+  version "1.14.2"
+  resolved "https://registry.yarnpkg.com/prettier/-/prettier-1.14.2.tgz#0ac1c6e1a90baa22a62925f41963c841983282f9"
 
 pretty-error@^2.0.2:
   version "2.1.1"
@@ -4619,7 +4630,7 @@ request@2.87.0:
     tunnel-agent "^0.6.0"
     uuid "^3.1.0"
 
-request@^2.74.0, request@^2.83.0, request@^2.87.0:
+request@2.88.0, request@^2.74.0, request@^2.83.0, request@^2.87.0:
   version "2.88.0"
   resolved "https://registry.yarnpkg.com/request/-/request-2.88.0.tgz#9c2fca4f7d35b592efe57c7f0a55e81052124fef"
   dependencies:
