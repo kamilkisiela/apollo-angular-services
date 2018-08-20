@@ -1,8 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
-import { pluck } from 'rxjs/operators';
-
-import { AllPostsGQL, Post } from './generated/graphql';
 
 @Component({
   selector: 'list',
@@ -17,13 +14,9 @@ import { AllPostsGQL, Post } from './generated/graphql';
   `,
 })
 export class ListComponent implements OnInit {
-  posts: Observable<Post[]>;
+  posts: Observable<any[]>;
 
-  constructor(private allPostsGQL: AllPostsGQL) {}
+  constructor() {}
 
-  ngOnInit() {
-    this.posts = this.allPostsGQL
-      .watch()
-      .valueChanges.pipe(pluck('data', 'posts'));
-  }
+  ngOnInit() {}
 }

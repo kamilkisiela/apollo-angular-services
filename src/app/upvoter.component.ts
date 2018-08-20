@@ -1,7 +1,5 @@
 import { Component, Input } from '@angular/core';
 
-import { UpvoteGQL } from './generated/graphql';
-
 @Component({
   selector: 'upvoter',
   template: `
@@ -12,13 +10,7 @@ export class UpvoterComponent {
   @Input()
   postId: number;
 
-  constructor(private upvoteGQL: UpvoteGQL) {}
+  constructor() {}
 
-  upvote() {
-    this.upvoteGQL
-      .mutate({
-        postId: this.postId,
-      })
-      .subscribe();
-  }
+  upvote() {}
 }
