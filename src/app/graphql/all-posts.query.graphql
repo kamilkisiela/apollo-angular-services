@@ -1,0 +1,12 @@
+query AllPosts {
+  posts {
+    id
+    title
+    votes
+    author {
+      id
+      firstName
+      lastName
+    }
+  }
+}
