@@ -46,12 +46,7 @@ export namespace AllPosts {
     author?: Author | null;
   };
 
-  export type Author = {
-    __typename?: "Author";
-    id: number;
-    firstName?: string | null;
-    lastName?: string | null;
-  };
+  export type Author = AuthorFragment.Fragment;
 }
 
 export namespace Upvote {
@@ -71,11 +66,28 @@ export namespace Upvote {
   };
 }
 
+export namespace AuthorFragment {
+  export type Fragment = {
+    __typename?: "Author";
+    id: number;
+    firstName?: string | null;
+    lastName?: string | null;
+  };
+}
+
 import { Injectable } from "@angular/core";
 
 import * as Apollo from "apollo-angular";
 
 import gql from "graphql-tag";
+
+const AuthorFragmentFragment = gql`
+  fragment AuthorFragment on Author {
+    id
+    firstName
+    lastName
+  }
+`;
 
 @Injectable({
   providedIn: "root"
@@ -91,12 +103,12 @@ export class AllPostsGQL extends Apollo.Query<
         title
         votes
         author {
-          id
-          firstName
-          lastName
+          ...AuthorFragment
         }
       }
     }
+
+    ${AuthorFragmentFragment}
   `;
 }
 @Injectable({

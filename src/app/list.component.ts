@@ -22,8 +22,6 @@ export class ListComponent implements OnInit {
   constructor(private allPostsGQL: AllPostsGQL) {}
 
   ngOnInit() {
-    this.posts = this.allPostsGQL
-      .watch()
-      .valueChanges.pipe(pluck('data', 'posts'));
+    this.posts = this.allPostsGQL.watch().valueChanges.pipe(pluck('data', 'posts'))
   }
 }
