@@ -1,1 +1,7 @@
-{ 'schemaPath': 'schema.json' }
+{
+  'schemaPath': 'schema.json',
+  'extensions':
+    {
+      'endpoints': { 'dev': 'https://simple-posts-authors-graphql.glitch.me' },
+    },
+}
