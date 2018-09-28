@@ -1,6 +1,16 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 import { pluck } from 'rxjs/operators';
+import gql from 'graphql-tag';
+
+gql`
+fragment AuthorFragment on Author {
+  id
+  firstName
+  lastName
+}
+
+`
 
 import { AllPostsGQL } from './generated/graphql';
 
