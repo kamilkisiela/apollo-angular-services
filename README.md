@@ -6,7 +6,7 @@ It's all possible thanks to:
 
 - apollo-angular
 - graphql-code-generator
-- graphql-codegen-apollo-angular-template
+- graphql-codegen-typescript-apollo-angular
 
 ## 1. Install
 
